@@ -5,9 +5,9 @@ from quiz_brain import QuizBrain
 # Question bank
 
 bank = []
-for question in question_data:
-    question_text = question["text"]
-    question_answer = question["answer"]
+for question in question_data["results"]:
+    question_text = question["question"]
+    question_answer = question["correct_answer"]
     bank.append(Question(question_text, question_answer))
 
 
